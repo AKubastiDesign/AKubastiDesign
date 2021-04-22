@@ -2,10 +2,6 @@
      border: green 1px solid; 
 } */
 
-html{
-    overflow:scroll;
-}
-
 body{
     background-image: url("assets/concretewhite.jpg");
     background-size: 60%;
@@ -18,7 +14,7 @@ body{
     background-color:rgb(252, 250, 248);
     background-image: url("assets/logo.svg");
     background-repeat: no-repeat;
-    background-position-x: 13.5%;
+    background-position-x: 11%;
     background-size: 100px, 100px;
     /* margin-bottom: 70px; */
     top:0;
@@ -30,12 +26,12 @@ body{
 nav{
     position:fixed;
     top: 20px;
-    right: 14%;
+    right: 11%;
 }
 
 nav ul{
     font-family: Helvetica;
-    word-spacing: 60px;
+    word-spacing: 45px;
     font-size: 20px;
 }
 
@@ -57,13 +53,12 @@ nav li a:hover{
 
 .work-container{
     display:grid;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    /* margin: 0 auto; */
+    margin-top: 60px;
+    margin-left: 6%;
     padding: 100px;
     position:static;
-    width: 1200px;
-    height: 150%;
+    width: fit-content;
     gap:5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -92,7 +87,8 @@ footer{
 
 h4{
     position: relative;
-    left: 13.5%;
+    width:fit-content;
+    left: 11%;
     top: 15px;
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -107,7 +103,7 @@ h4{
     width: 200px;
     position:relative;
     bottom: 31px;
-    left: 35%;
+    left: 37.5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -130,6 +126,26 @@ h4{
 
 .linked:hover{
     fill: rgb(241,96,56);
+}
+
+@media (max-width: 800px){
+    .work-container{
+        position:static;
+        margin-top: 50px;
+        padding-left: 1%;
+        gap: 2%;
+        scale-:fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        ;
+    }
 }
 
 
