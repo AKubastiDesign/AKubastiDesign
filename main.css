@@ -1,5 +1,5 @@
 /* *{
-     border: green 1px solid; 
+     border: green .5px solid; 
 } */
 
 body{
@@ -21,12 +21,14 @@ body{
     left:0;
     right:0;
     position:fixed;
+    z-index:2;
 }
 
 nav{
     position:fixed;
     top: 20px;
     right: 11%;
+    z-index:2;
 }
 
 nav ul{
@@ -53,13 +55,16 @@ nav li a:hover{
 
 .work-container{
     display:grid;
-    /* margin: 0 auto; */
-    margin-top: 60px;
-    margin-left: 6%;
-    padding: 100px;
-    position:static;
+    margin: auto;
+    margin-top: 140px;
+    position:relative;
+    gap:3.5%;
+    min-width:1200px;
+    max-width:1200px;
     /* width: fit-content; */
-    gap:5%;
+    /* margin-left: 6%;
+    padding: 100px; */
+    /* align-content: center; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -67,22 +72,39 @@ nav li a:hover{
     "c d"
     "e f";
     border: 1px solid rgb(0, 0, 255);
-    overflow:auto;
+    z-index:1;
+    /* overflow:auto; */
   }
 
-  
+  .work-one{
+      background: url("assets/coke6x3back.jpg") no-repeat
+  }
+
+  .work-one:hover{
+      background: url("assets/work\ hover.jpg") no-repeat
+  }
+
+  .work-two{
+      background: url(/assets/desekairos6x3.jpg) no-repeat
+  }  
+
+  .work-two:hover{
+    background: url("assets/work\ hover.jpg") no-repeat
+}
 
 
 
 footer{
     position:static;
     margin: 0 auto;
+    margin-top:100px;
     padding: 0;
     height:48px;
     width: 100%;
     left: 0%;
     background-color:rgb(252, 250, 248);
     border-radius: 10px;
+    z-index:2;
 }
 
 h4{
@@ -128,12 +150,17 @@ h4{
     fill: rgb(241,96,56);
 }
 
-@media (max-width: 800px){
+@media (max-width: 625px){
     .work-container{
-        position:static;
-        margin-top: 50px;
-        padding-left: 1%;
-        gap: 2%;
+        margin: auto;
+        margin-top:-67px;
+        margin-bottom:-120px;
+        /* margin-top: 20px; */
+        position:relative;
+        gap:2%;
+        transform: scale(.8,.8);
+        transform-origin: left;
+        /* min-width:300px; */
         /* scale-:fit-content; */
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -145,6 +172,7 @@ h4{
         "e"
         "f"
         ;
+        z-index:1;
     }
 
     /* nav{
