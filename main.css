@@ -58,8 +58,9 @@ nav li a:hover{
     margin: auto;
     margin-top: 140px;
     position:relative;
+    right: 1%;
     gap:3.5%;
-    min-width:1200px;
+    /* min-width:1200px; */
     max-width:1200px;
     /* width: fit-content; */
     /* margin-left: 6%;
@@ -77,19 +78,56 @@ nav li a:hover{
   }
 
   .work-one{
-      background: url("assets/coke6x3back.jpg") no-repeat
+      background: url("assets/coke6x3back.jpg") no-repeat;
+      box-shadow: 5px 5px 10px 0px #0f0f0f94;
+  }
+  .work-one:hover{
+      background: url("assets/cola\ hover.jpg") no-repeat;
   }
 
-  .work-one:hover{
-      background: url("assets/work\ hover.jpg") no-repeat
-  }
 
   .work-two{
-      background: url(/assets/desekairos6x3.jpg) no-repeat
+      background: url(/assets/desekairos6x3.jpg) no-repeat;
+      /* box-shadow: 5px 5px 10px 0px #0f0f0f94; */
   }  
-
   .work-two:hover{
-    background: url("assets/work\ hover.jpg") no-repeat
+    background: url("assets/dese\ hover.jpg") no-repeat;
+}
+
+
+.work-three{
+    background: url(assets/wpa6x3.jpg) no-repeat;
+    /* box-shadow: 5px 5px 10px 0px #0f0f0f94; */
+}
+.work-three:hover{
+    background: url(assets/westford\ hover.jpg) no-repeat;
+}
+
+
+.work-four{
+    background: url(assets/shirt.jpg) no-repeat;
+    /* box-shadow: 5px 5px 10px 0px #0f0f0f94; */
+}
+.work-four:hover{
+    background: url(assets/shirt\ hover.jpg) no-repeat;
+}
+
+
+.work-five{
+    background: url(assets/nationgrid6x3.jpg) no-repeat;
+    /* box-shadow: 5px 5px 10px 0px #0f0f0f94; */
+}
+.work-five:hover{
+    background: url(assets/nationalgrid\ hover.jpg) no-repeat;
+}
+
+
+.work-six{
+    background: url(assets/poster.jpg) no-repeat;
+    /* box-shadow: 5px 5px 10px 0px #0f0f0f94; */
+}
+.work-six:hover{
+    background: url(assets/skate\ hover.jpg) no-repeat;
 }
 
 
@@ -150,17 +188,22 @@ h4{
     fill: rgb(241,96,56);
 }
 
-@media (max-width: 625px){
+svg:hover {
+    fill: #F16038;
+}
+
+@media (max-width: 1000px){
     .work-container{
         margin: auto;
         margin-top:-67px;
         margin-bottom:-120px;
         /* margin-top: 20px; */
         position:relative;
+        left:1%;
         gap:2%;
         transform: scale(.8,.8);
         transform-origin: left;
-        /* min-width:300px; */
+        max-width:480px;
         /* scale-:fit-content; */
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
