@@ -55,79 +55,6 @@ nav li a:hover{
 }
 
 
-
-work-container{
-    display:grid;
-    margin: auto;
-    margin-top: 140px;
-    position:relative;
-    right: 1%;
-    gap:3.5%;
-    /* min-width:1200px; */
-    max-width:1200px;
-    /* width: fit-content; */
-    /* margin-left: 6%;
-    padding: 100px; */
-    /* align-content: center; */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "a b"
-    "c d"
-    "e f";
-    border: 1px solid rgb(0, 0, 255);
-    z-index:1;
-    /* overflow:auto; */
-  }
-
-  /* .work-one{
-      background: url("assets/coke6x3back.jpg") no-repeat;
-  }
-  .work-one:hover{
-      background: url("assets/cola\ hover.jpg") no-repeat;
-  }
-
-
-  .work-two{
-      background: url(/assets/desekairos6x3.jpg) no-repeat;
-  }  
-  .work-two:hover{
-    background: url("assets/dese\ hover.jpg") no-repeat;
-}
-
-
-.work-three{
-    background: url(assets/wpa6x3.jpg) no-repeat;
-}
-.work-three:hover{
-    background: url(assets/westford\ hover.jpg) no-repeat;
-}
-
-
-.work-four{
-    background: url(assets/shirt.jpg) no-repeat;
-}
-.work-four:hover{
-    background: url(assets/shirt\ hover.jpg) no-repeat;
-}
-
-
-.work-five{
-    background: url(assets/nationgrid6x3.jpg) no-repeat;
-}
-.work-five:hover{
-    background: url(assets/nationalgrid\ hover.jpg) no-repeat;
-}
-
-
-.work-six{
-    background: url(assets/poster.jpg) no-repeat;
-}
-.work-six:hover{
-    background: url(assets/skate\ hover.jpg) no-repeat;
-}
-*/
-
  footer{
     position:static;
     margin: 0 auto;
@@ -214,20 +141,26 @@ svg:hover {
 /* Grid starter code */
 .image-gallery {
     /* height: 100%; */
+    /* position:relative; */
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr minmax(600px, 1fr) minmax(600px, 1fr) 1fr;
+    grid-template-columns: 1fr minmax(600px, 1fr) 1fr;
     grid-template-rows: auto;
     row-gap: 4.5%;
-    column-gap: 3%;
+    /* column-gap: 3%; */
     padding-top: 150px;
     padding-bottom: 50px;
     grid-template-areas:
-    ". a b ."
-    ". c d ."
-    ". e f ."
+    ". a ."
+    ". b ."
+    ". c ."
     ;
     z-index: 1;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 
 .box-styling {
@@ -256,32 +189,6 @@ svg:hover {
     grid-area: c;
 }
 
-.box4 {
-    grid-area: d;
-}
-
-.box5 {
-    grid-area: e;
-}
-
-.box6 {
-    grid-area: f;
-}
-
-  /* MEDIA QUERY FOR SMALL SCREENS */
-  /* @media (max-width:1100px){
-    .image-gallery {
-      padding-bottom: 0px;
-        margin-bottom: 600px;
-        grid-template-columns: 1fr minmax(600px, 1fr) minmax(600px, 1fr) 1fr;
-        grid-template-areas:
-        ". a b ."
-        ". c d ."
-        ". e f ."
-        ;
-    }
- } */
-
 /* MEDIA QUERY FOR MOBILE */
  @media (max-width:735px){
      nav {
@@ -296,11 +203,8 @@ svg:hover {
         grid-template-columns: 1fr minmax(600px, 1fr) 1fr;
         grid-template-areas:
         ".a."
+        "..."
         ".b."
-        ".c."
-        ".d."
-        ".e."
-        ".f."
         ;
         z-index:1;
         /* transform: scale(.7,.7);
@@ -345,14 +249,14 @@ transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
   }
   /* what alters the image */
-  .hovereffect:hover img {
+  /* .hovereffect:hover img {
       background-color:black;
     filter:blur(3px);
     -webkit-filter: blur(3px);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-  }
+  } */
   /* what is styling the headers */
   .hovereffect h2 {
     /* text-transform: uppercase; */
